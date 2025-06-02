@@ -1,0 +1,46 @@
+<div class="task-item">
+  <div *ngIf="!isEditing">
+    <mat-checkbox [checked]="task.isCompleted" (change)="onCheckboxChange()">
+      {{ task.name }}
+    </mat-checkbox>
+  </div>
+
+  <div *ngIf="isEditing" class="edit-section">
+    <input
+      type="text"
+      [(ngModel)]="editedName"
+      name="editedName"
+      required
+      class="input-edit-name"
+      #editedNameInput="ngModel"
+    />
+    <div
+      class="error-message"
+      *ngIf="editedNameInput.invalid && editedNameInput.touched"
+    >
+      Este campo é obrigatório
+    </div>
+  </div>
+
+  <div class="task-actions">
+    <button *ngIf="!isEditing" (click)="startEdit()">
+      <mat-icon>edit</mat-icon>
+    </button>
+
+    <button
+      *ngIf="isEditing"
+      (click)="confirmEdit()"
+      [disabled]="editedName.trim() === ''"
+    >
+      <mat-icon>check</mat-icon>
+    </button>
+
+    <button *ngIf="isEditing" (click)="cancelEdit()">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <button (click)="onDelete()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 0.5rem;
+  box-shadow: 1px 1px 4px #00000010;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .task-name,
+  mat-checkbox {
+    font-size: 1rem;
+    color: #333;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .task-actions {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #5e5e5e;
+      transition: color 0.2s;
+
+      mat-icon {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: #ff7200;
+      }
+    }
+  }
+}
+
+.input-edit-name {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px #5e5e5e4b;
+  font-size: 14px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.input-edit-name:focus {
+  outline: none;
+  border: solid 1px #ff730057;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.input-edit-name.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .input-edit-name {
+    width: 100%;
+  }
+}
