@@ -1,0 +1,11 @@
+<div *ngFor="let task of tasks" class="completed-task">
+  <div class="task-header">
+    <mat-icon>check_circle</mat-icon>
+    <span class="completed-name">{{ task.name }}</span>
+  </div>
+  <div class="completion-date">
+    <span *ngIf="task.isCompleted">
+      Concluído em {{ task.completionDate | date : "dd/MM/yyyy, HH:mm" }}
+    </span>
+  </div>
+</div>

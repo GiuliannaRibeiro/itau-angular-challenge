@@ -1,0 +1,26 @@
+.completed-task {
+  background: #f7f9fc;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.completed-name {
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+
+.completion-date {
+  font-size: 0.8rem;
+  color: #777;
+  margin-left: 1.7rem;
+}
+
+.task-header {
+  display: flex;
+}
+
+mat-icon {
+  color: #ff7200;
+  overflow: visible;
+}
