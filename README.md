@@ -44,6 +44,7 @@ Aplicação To-Do List que permite:
 1. Clone o repositório.
 2. Execute `npm install`.
 3. Inicie a aplicação com `ng serve` ou `npm start`.
+4. Para executar os testes, rode `ng test`
 
 ## Screenshots
 
