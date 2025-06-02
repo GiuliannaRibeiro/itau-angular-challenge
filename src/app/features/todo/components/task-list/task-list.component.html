@@ -1,0 +1,12 @@
+<div *ngIf="tasks.length <= 0" class="empty-message">
+  Nenhuma tarefa adicionada ainda. Que tal começar agora? :)
+</div>
+<div class="task-list">
+  <app-task-item
+    *ngFor="let task of tasks"
+    [task]="task"
+    (markAsCompleted)="onTaskCompleted($event)"
+    (updateName)="onUpdateName($event)"
+    (deleteTask)="onDeleteTask($event)">
+  </app-task-item>
+</div>
