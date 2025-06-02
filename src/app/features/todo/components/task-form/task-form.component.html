@@ -1,0 +1,13 @@
+<form (ngSubmit)="submitTask()" class="add-item-form">
+  <input
+    type="text"
+    [(ngModel)]="newTask"
+    name="task"
+    placeholder="Adicione uma nova tarefa"
+    required
+    class="input-items"
+  />
+  <button type="submit" class="button-add-items">
+    <mat-icon>add</mat-icon>
+  </button>
+</form>                                                                           
