@@ -9,6 +9,7 @@
   box-shadow: 1px 1px 4px #00000010;
   flex-wrap: wrap;
   gap: 0.5rem;
+  flex-wrap: nowrap;
 
   .task-name,
   mat-checkbox {
