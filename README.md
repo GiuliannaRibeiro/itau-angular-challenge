@@ -1,91 +1,61 @@
-# Desafio Angular Itau
+# Case Técnico - Itaú Angular Challenge
+![image](https://github.com/user-attachments/assets/1d529e70-47ce-4633-b839-f087e46a4428)
 
-![Banner](./doc/images/banner.png)
+Projeto desenvolvido para o desafio técnico do Itaú, utilizando:
 
-## 💁‍♂️ Sobre o itau 
+- **Angular 18**  
+- **Standalone Components**
+- **Signals e Computed Properties** para gerenciamento de estado
+- **Validação de campos**
+- **Testes unitários**
+- Estrutura clara (componentes, serviços e modelos)
 
-O Itaú Unibanco é o maior banco privado do Brasil, a maior instituição financeira da América Latina e uma das maiores do mundo.
+## Checklist dos Requisitos
 
-Nossa marca é apontada pelo 16º ano consecutivo como a mais valiosa do país, segundo o ranking Interbrand, entre outros importantes reconhecimentos.
+**Obrigatórios:**
+- [✓] Código com Angular 18
+- [✓] Validação de campos obrigatórios implementada
+- [✓] Estrutura de projeto definida
+- [✓] Gerenciamento de estado com Signals
+- [✓] Testes unitários
 
-## 📋 O que avaliaremos
+**Extras (Opcionais):**
+- [✓] Standalone Components
+- [✓] Uso de Signals (gerenciamento de estado reativo, eliminando a necessidade de JSON Server para armazenamento)
 
-Iremos avaliar o seu conhecimento com angular e typescript.
+## Descrição do Projeto
 
-## 🔧 Configurando o ambiente
+Aplicação To-Do List que permite:
 
-Siga esse passo a passo para iniciar seu projeto:
+- **Adicionar Tarefa:** Campo de entrada e botão para incluir novas tarefas.
+- **Listar Tarefas:** Exibe as tarefas ativas com opções para editar, excluir e marcar como concluída.
+- **Listar Tarefas Concluídas:** Exibe em uma lista separada, as tarefas finalizadas com a data/hora da conclusão registrada.
 
-**1. Dê um like e faça um fork do projeto**
+## Estrutura dos Componentes
 
-**2. Faça o clone do projeto no seu computador**
+- **AppComponent:** Gerencia o estado e integra os demais.
+- **TaskFormComponent:** Formulário para adicionar tarefas.
+- **TaskListComponent:** Exibe as tarefas ativas.
+- **TaskItemComponent:** Representa cada tarefa individual, permitindo edição, exclusão e marcação como concluída.
+- **CompletedTaskComponent:** Exibe as tarefas concluídas.
 
-```sh
-git clone "https://github.com/**seu-usuario**/itau-angular-challenge.git"
-```
-*no lugar do seu ˜\*\*seu-usuario\*\*˜ coloque o seu usario do github.
+## Instruções para Execução
 
-**3. Criando uma nova branch.**
+1. Clone o repositório.
+2. Execute `npm install`.
+3. Inicie a aplicação com `ng serve` ou `npm start`.
+4. Para executar os testes, rode `ng test`
 
-```sh
-git checkout -b "interview/nome-sobrenome"
-```
+## Screenshots
 
-**4. Instalando o angular**
+### Interface Inicial
+![image](https://github.com/user-attachments/assets/6a07064f-4d92-4798-abbb-6b55117d767e)
 
-```sh
-npm install -g @angular/cli
-```
+### Lista de Tarefas Concluídas
+![image](https://github.com/user-attachments/assets/af934f85-3024-42c7-ba2f-bd765e2a6263)
 
-**5. Iniciando o projeto**
+## Paleta de Cores  
 
-```sh
-ng new .
-```
-
-**6. Agora é rodar o projeto**
-
-```sh
-npm start
-```
-
-## 🚀 Desafio frontend
-
-O objetivo do desafio é desenvolver um to do list. 
-
-Os possiveis valores para a vaga são:
-
-- Backend
-- Frontend
-- QA
-
-e para o Nivel deverão ser:
-
-- Jr.
-- Pl.
-- Sn.
-
-## 📋 Requisitos
-
-### Regras de Negocios
-🔨 [Requisitos funcionais](./doc/features/REQUIREMENTS.md)
-
-### Obrigatório
-
-1. Escrever o código com [Angular 18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)  ;)
-2. Validar campos obrigatórios!
-3. Defina uma estrutura do projeto.
-4. Gerenciamento de estado
-5. Fazer testes unitários.
-
-
-### Extras (Opcionais)
-1. Utilizar standalone components
-2. Utilizar signals.
-4. [Json Server](https://www.npmjs.com/package/json-server) para guardar valores
-
-
-## 🔨 Ferramento de desenvolvimento
-
-Fique a vontade para usar a ferramenta mais confortável para você ;)
-Aqui usamos muito o [VS code](https://code.visualstudio.com/)
+A aplicação utiliza a paleta de cores do Itaú para reforçar a identidade visual:  
+- **Laranja:** `#FF7200`  
+- **Azul escuro:** `#0D0057`  
