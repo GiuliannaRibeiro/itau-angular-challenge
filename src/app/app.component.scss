@@ -1,0 +1,55 @@
+.todo-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #0000001a;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: 40px;
+  margin: 8px 8px 8px 0px;
+  object-fit: contain;
+}
+
+.title-with-logo {
+  font-weight: 500;
+  color: #ff7200;
+  margin: 0;
+}
+
+.title-completed {
+  display: flex;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+mat-icon {
+  margin-right: 0.5rem;
+  color: #ff7200;
+}
+
+.completed-tasks {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    margin: 2rem;
+  }
+  .logo {
+    height: 50px;
+    margin-right: 6px;
+  }
+
+  .title-with-logo {
+    font-size: 28px;
+  }
+}

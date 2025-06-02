@@ -1,1 +1,23 @@
-<router-outlet />
+<div class="todo-container">
+  <div class="title">
+    <img src="assets/photos/logo-itau.png" alt="Logo do Itaú" class="logo" />
+    <h3 class="title-with-logo">Lista de Tarefas</h3>
+  </div>
+
+  <app-task-form (taskCreated)="addTask($event)"></app-task-form>
+  <app-task-list
+    [tasks]="activeTasks()"
+    (markAsCompleted)="markTaskAsCompleted($event)"
+    (updateName)="updateTaskName($event)"
+    (deleteTask)="deleteTask($event)"
+  > 
+  </app-task-list>
+
+  <div class="completed-tasks" *ngIf="completedTasks().length > 0">
+    <p class="title-completed">
+      <mat-icon>check_circle</mat-icon>
+      Tarefas finalizadas ({{ completedTasks().length }})
+    </p>
+    <app-completed-task [tasks]="completedTasks()"></app-completed-task>
+  </div>
+</div>
