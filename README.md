@@ -1,5 +1,4 @@
 # Case Técnico - Itaú Angular Challenge
-![image](https://github.com/user-attachments/assets/1d529e70-47ce-4633-b839-f087e46a4428)
 
 Projeto desenvolvido para o desafio técnico do Itaú, utilizando:
 
@@ -45,14 +44,6 @@ Aplicação To-Do List que permite:
 2. Execute `npm install`.
 3. Inicie a aplicação com `ng serve` ou `npm start`.
 4. Para executar os testes, rode `ng test`
-
-## Screenshots
-
-### Interface Inicial
-![image](https://github.com/user-attachments/assets/6a07064f-4d92-4798-abbb-6b55117d767e)
-
-### Lista de Tarefas Concluídas
-![image](https://github.com/user-attachments/assets/af934f85-3024-42c7-ba2f-bd765e2a6263)
 
 ## Paleta de Cores  
 
